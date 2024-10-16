@@ -1,0 +1,8 @@
+.ant-card-body {
+    padding: 0 !important;
+  }
+  .ant-card-cover{
+    margin-inline-start: unset !important;
+    margin-inline-end: unset !important;
+    border: none !important;
+  }

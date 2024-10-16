@@ -1,0 +1,11 @@
+.myBrand{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    cursor: pointer;
+   
+}
+
+.myBrand:hover{
+   border-bottom: 1px solid darkgray !important;
+}

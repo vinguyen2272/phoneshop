@@ -1,0 +1,69 @@
+.card{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid #d0d0d0;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.itemDetails{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+.itemDetails img{
+    width: 7rem;
+    height: 7rem;
+}
+.quantityControl{
+    display: flex;
+    gap: 1.2rem;
+   justify-content: center;
+}
+.price, .total{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.button{
+    height: 1.3rem;
+    width: 1.3rem;
+    background: #c1baba;
+    border: 1px solid lightgray;
+    text-align: center;
+    cursor: pointer;
+}
+.myButton{
+    width: 10rem;
+      height: 2.5rem;
+      font-weight: 600;
+      font-size: 1rem;
+  }
+  .cartTotal h2{
+    text-align: end;
+  }
+  .cartTotal p{
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    align-items: center;
+    border: 1px solid;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+  }
+  .cartTotal p:nth-of-type(2){
+    border-left: 1px solid;  /* Viền bên trái */
+    border-right: 1px solid; /* Viền bên phải */
+    border-top: none;        /* Không có viền trên */
+    border-bottom: none;  
+  }
+  .cartTotal button{
+    margin-top: 2rem;
+    height: 2.9rem;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }

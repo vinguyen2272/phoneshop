@@ -1,0 +1,10 @@
+.myCategory{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+   
+}
+
+.myCategory:hover{
+   border-bottom: 1px solid darkgray !important;
+}

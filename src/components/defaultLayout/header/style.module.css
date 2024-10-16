@@ -1,0 +1,76 @@
+
+.myHeader{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background: #262626;
+}
+ .headerTop{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0.5rem auto;
+ }
+ .headerBottom{
+    display: flex;
+    justify-content: space-around;
+    /* margin-bottom: 1.2rem; */
+    align-items: center;
+ }
+.hambugerMenu{
+    display: none;
+}
+.pcMode{
+    display: block;
+    width: 380px;
+}
+.info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    cursor: pointer;
+}
+.user{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.ava{
+    display: flex;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    justify-content: center;
+    background: #f5926e;  
+}
+.subMenu{
+    color: aliceblue;
+    position: absolute;
+    background: #f5926e;
+    top: 76%;
+    left: 25%;
+    width: 8rem;
+    line-height: 2rem;
+    padding: 1rem;
+    z-index: 100;
+}
+.subMenu p{
+    border-bottom: 1px solid white;
+}
+.link{
+    color: aliceblue;
+}
+/* Responsive design */
+
+@media (max-width: 768px) {
+    .hambugerMenu {
+        display: block; /* Hiện nút hamburger cho chế độ mobile */
+    }
+    
+    .pcMode {
+        display: none; /* Ẩn menu cho chế độ mobile */
+    }}
+    h3{
+        font-size: 1rem;
+    }

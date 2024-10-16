@@ -1,0 +1,18 @@
+.myForm{
+width: 50rem;
+display: flex;
+flex-direction: column;
+}
+.myButton{
+    width: 80%;
+   height: 3rem;
+   font-size: 1.2rem;
+   font-weight: 600;
+   margin-top: 1rem;
+}
+.myButton:hover{
+    background: #f5926e !important;
+}
+.input{
+    width: 40rem;
+}

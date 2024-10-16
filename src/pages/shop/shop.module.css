@@ -1,0 +1,12 @@
+.myCarrd{
+    overflow: hidden;
+}
+
+.myPagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+/* .myNav{
+    cursor: pointer;
+} */

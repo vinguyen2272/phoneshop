@@ -1,0 +1,51 @@
+h3{
+    font-size: .8rem;
+}
+.colFooter{
+    padding: 0 2rem !important;
+}
+.subscribe{
+    display: flex;
+    gap: 1rem;
+}
+.errMess{
+    color: red;
+    animation: floatMess 2s ease-in-out infinite;
+}
+.virtualLink{
+    cursor: pointer;
+}
+.ft{
+    text-align: center;
+    /* margin: 1rem 0; */
+    padding: 1rem 0 2rem 0;
+    background: #262626;
+    color: white;
+}
+.mybutton{
+    background: #f5926e;
+}
+.mybutton:hover{
+    background-color: #262626 !important; 
+    border: 1px solid rgba(255, 255, 255, 0.5); 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+}
+.footerContainer{
+    background: #262626;
+    margin-top: -5rem;
+    padding-top: 3rem;
+    border: 1px dotted gray;
+    padding-bottom: 3rem;
+    color: white;
+}
+@keyframes floatMess{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-.5rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

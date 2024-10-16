@@ -1,0 +1,121 @@
+.container {
+    
+    margin: 0 auto;
+  }
+  .header {
+    background-color: #F5F7F7;
+    color: var(--prime-color); /* Replace with your actual color */
+    font-size: 1.25rem; /* Adjust for Ant Design's typography */
+    font-weight: 600;
+  }
+  
+  .resetButton {
+    padding: 8px 16px;
+    margin-bottom: 16px;
+  }
+  
+  .couponSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #d9d9d9;
+    padding: 8px;
+  }
+  
+  .couponInput {
+    width: 200px; /* Adjust width as necessary */
+  }
+  
+  .applyCouponText {
+    font-size: 1rem; /* Adjust as necessary */
+    font-weight: 600;
+  }
+  
+  .cartTotalsContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+  }
+  
+  .cartTotals {
+    width: 400px; /* Adjust width as necessary */
+  }
+  
+  .cartTotalTitle {
+    text-align: right;
+  }
+  
+  .cartTotalRow {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+  }
+  
+  .cartTotalValue {
+    font-weight: 600;
+  }
+  
+  .totalAmount {
+    font-weight: bold;
+  }
+  
+  .checkoutButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .checkoutButton {
+    width: 100%;
+  }
+  
+  .emptyCartContainer {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 20px;
+  }
+  
+  .emptyCartImage {
+    width: 320px;
+    border-radius: 8px;
+    padding: 16px;
+    margin: auto;
+  }
+  
+  .emptyCartCard {
+    max-width: 500px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .emptyCartTitle {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .emptyCartMessage {
+    text-align: center;
+  }
+  
+  .continueShoppingButton {
+    margin-top: 16px;
+  }
+  .title{
+    font-size: 3rem;
+}
+
+.continueShoppingButton{
+  width: 100%;
+  height: 2.5rem;
+}
+.continueShoppingButton:hover{
+  background: #f5926e !important;
+}

@@ -1,0 +1,10 @@
+.color{
+    display: flex;
+    justify-content: start !important;
+    cursor: pointer;
+  
+}
+
+.color:hover{
+   border-bottom: 1px solid darkgray !important;
+}
