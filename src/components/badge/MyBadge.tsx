@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const MyBadge = () => {
     const itemsInCart = useAppSelector((state: any) => state.cart.items);
-    const count = itemsInCart.reduce((total, item) => total + item.quantity, 0);
+    const count = itemsInCart.reduce((total:any, item:any) => total + item.quantity, 0);
   return (
    <>
    <Link to='/cart'>

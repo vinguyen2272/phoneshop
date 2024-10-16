@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import {  Button, Carousel, Col, Row} from "antd";
-import { RightOutlined, LeftOutlined } from '@ant-design/icons';
+import { Carousel, Col, Row} from "antd";
+
 import { useNavigate } from 'react-router-dom';
 import Style from './home.module.css'
 import b1 from '../../assets/banner/b1.png'
@@ -11,8 +11,8 @@ import pic1 from'../../assets/banner/bannerQc.jpg'
 import pic2 from'../../assets/product/qc2.png'
 import pic3 from'../../assets/product/qc3.png'
 import pic4 from'../../assets/product/qc4.png'
-
-import { useEffect, useRef } from "react";
+import './home.css'
+import { useEffect} from "react";
 import { getAllProducts } from "../../redux/slides/ProductSlice";
 import { useAppDispatch, useAppSelector } from "../../redux/store";
 
@@ -23,7 +23,7 @@ const Home = () => {
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
   const { items, loading, error } = useAppSelector((state) => state.products);
-  const carouselRef = useRef(null);
+
 
   useEffect(() => {
     dispatch(getAllProducts()); 
@@ -41,8 +41,9 @@ const Home = () => {
   
   const handleProductClick = (id:any) => {
     navigate(`/shop/${id}`);
-
   };
+ 
+
   return (
    <>
   
@@ -79,7 +80,7 @@ const Home = () => {
 
     {/* Carousel sản phẩm mới */}
     <h2>New Arrivals</h2>
-    <Carousel infinite = {true} autoplay={true} ref={carouselRef} dots={false}>
+   <Carousel infinite = {true} autoplay={true} arrows dots={false}>
       {chunks.map((chunk, index) => (
         <div key={index}>
           <Row gutter={24}>
@@ -99,11 +100,6 @@ const Home = () => {
         </div>
       ))}
     </Carousel>
-    <div className={Style.buttonContainer}>
-    <Button shape="circle" icon={<LeftOutlined />}  onClick={()=>{carouselRef.current.prev()}}  />
-    <Button shape="circle" icon={<RightOutlined />}  onClick={()=>{carouselRef.current.next()}}  />
-    
-    </div>
     
     {/* Danh sách sản phẩm bán chạy hiển thị 4sp */}
     <h2>Our Bestsellers</h2>

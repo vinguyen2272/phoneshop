@@ -6,7 +6,7 @@ const BASE_URL = "https://6707af838e86a8d9e42c7a6d.mockapi.io/api/shopping";
 
 export const getDetail = createAsyncThunk(
     'products/detail',
-    async (id) => {
+    async (id:string) => {
         const response = await request(`${BASE_URL}/product/${id}`, {
             method: 'GET',
           });

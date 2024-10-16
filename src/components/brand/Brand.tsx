@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { List, Typography } from 'antd';
 import { CaretDownOutlined } from '@ant-design/icons';
 import style from './brand.module.css'

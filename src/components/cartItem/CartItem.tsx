@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useEffect, useState } from "react";
 import { DeleteOutlined } from "@ant-design/icons"; 
 
@@ -32,7 +33,7 @@ const CartItem: React.FC<ItemCardProps> = ({ item }) => {
   const products = useAppSelector((state: any) => state.cart.items);
 
   useEffect(() => {
-    const price = products.reduce((acc, item) => acc + item.price * item.quantity, 0);
+    const price = products.reduce((acc:any, item:any) => acc + item.price * item.quantity, 0);
     setTotalAmt(price);
   }, [products]);
   useEffect(() => {

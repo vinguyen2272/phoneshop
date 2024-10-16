@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useAppDispatch, useAppSelector } from '../../redux/store';
 import { getAllProducts } from '../../redux/slides/ProductSlice';
 import { Col, Pagination, Row } from 'antd';
@@ -26,6 +26,7 @@ const Shop = () => {
   if (error) return <div>Error: {error}</div>;
 
   const onShowSizeChange = (current:number, size:number) => {
+    console.log(current)
     setCurrent(1); 
     setPageSize(size);
   };

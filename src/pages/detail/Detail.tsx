@@ -15,20 +15,21 @@ const Detail = () => {
     useEffect(() => {
         if(id){
             dispatch(getDetail(id))
-        }
-        
+        } 
     }, [dispatch]);
 
     if (loading) return <div>Loading...</div>;
     if (error) return <div>Error: {error}</div>;
 
-    const handleAddToCart = (product: { id: number; name: string; price: number; color: string; description: string; image: string }) => {
+    const handleAddToCart = (product: { id: string; name: string; price: number; color: string; description: string; img: string }) => {
       const productWithQuantity = { ...product, quantity: 1 }; 
       dispatch(addToCart(productWithQuantity));
     };
   return (
     <div>
      {items && <DetailComponent 
+     key={items.id}
+     id={items.id}
      pic={items.img} 
      title={items.productname}
      price = {items.price}

@@ -2,16 +2,17 @@ import { Button, Col, Row } from "antd";
 import style from './style.module.css'
 
 interface DetailComponentProps {
+  id:string;
   pic: string;
   title: string;
   price: number;
   des: string;
   color: string;
-  onAddToCart: (product: { id: number; name: string; price: number; color: string; description: string; quantity: number}) => void;
+  onAddToCart: (product: { id: string; name: string; price: number; color: string; description: string; quantity: number,img:string}) => void;
 }
-const DetailComponent: React.FC<DetailComponentProps> = ({ pic, title, price, des, color, onAddToCart }) => {
+const DetailComponent: React.FC<DetailComponentProps> = ({ pic, title, price, des, color,id, onAddToCart }) => {
   const handleAddToCart = () => {
-    const product = { id: Math.random(), name: title, price, color,pic, description: des,quantity: 1 };
+    const product = { id, name: title, price, color,img:pic, description: des,quantity: 1 };
     onAddToCart(product);
   };
 
