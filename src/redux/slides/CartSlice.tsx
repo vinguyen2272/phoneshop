@@ -12,7 +12,7 @@ interface CartState {
 }
 
 const initialState: CartState = {
-  items: JSON.parse(localStorage.getItem('cart') || '[]'), // Lấy dữ liệu từ local storage
+  items: JSON.parse(localStorage.getItem('cart') || '[]'),
 };
 
 const cartSlice = createSlice({
@@ -26,7 +26,7 @@ const cartSlice = createSlice({
       } else {
         state.items.push({ ...action.payload, quantity: 1 });
       }
-      saveCartToLocalStorage(state.items); // Lưu vào local storage
+      saveCartToLocalStorage(state.items); 
     },
     increaseQuantity: (state, action: PayloadAction<{ id: string }>) => {
       const item = state.items.find(item => item.id === action.payload.id);

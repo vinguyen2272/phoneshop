@@ -1,5 +1,5 @@
 .container {
-    
+    padding: 1rem 2rem;
     margin: 0 auto;
   }
   .header {
@@ -118,4 +118,44 @@
 }
 .continueShoppingButton:hover{
   background: #f5926e !important;
+}
+.button{
+  height: 1.3rem;
+  width: 1.3rem;
+  background: #c1baba;
+  border: 1px solid lightgray;
+  text-align: center;
+  cursor: pointer;
+}
+.myButton{
+  width: 10rem;
+    height: 2.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.cartTotal h2{
+  text-align: end;
+}
+.cartTotal p{
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  align-items: center;
+  border: 1px solid;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+.cartTotal p:nth-of-type(2){
+  border-left: 1px solid;  /* Viền bên trái */
+  border-right: 1px solid; /* Viền bên phải */
+  border-top: none;        /* Không có viền trên */
+  border-bottom: none;  
+}
+.cartTotal button{
+  margin-top: 2rem;
+  height: 2.9rem;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 600;
 }

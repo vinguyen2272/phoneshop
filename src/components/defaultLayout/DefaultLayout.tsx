@@ -22,7 +22,7 @@ const DefaultLayout = () => {
     <Layout style={{minHeight:'100vh', background:'#f5f5f3'}}> 
       <Header/>
       
-      <Content style={{margin:'9rem auto', width:'95%', background:'rgb(255 255 255);'}}>
+      <Content style={{margin:'9rem auto', width:'95%', background:'rgb(255 255 255)'}}>
       <Routes>
             {showContentMenu(routes)}
     </Routes>
